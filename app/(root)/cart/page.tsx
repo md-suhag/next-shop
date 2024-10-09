@@ -33,7 +33,7 @@ const Cart = () => {
   const removeCartHandler = (id: number) => dispatch(removeItem({ id }));
 
   // handle payment success
-  const handleSuccess = (details: any) => {
+  const handleSuccess = () => {
     router.push("/success");
     dispatch(clearCart());
   };
@@ -61,7 +61,7 @@ const Cart = () => {
           {/* cart items  */}
           <div className="rounded-lg shadow-md overflow-hidden xl:col-span-4">
             <h1 className="p-4 text-xl sm:text-2xl md:text-3xl font-bold text-white bg-blue-700">
-              Your Cart's have {totalQuantity} Items
+              Your Cart&apos;s have {totalQuantity} Items
             </h1>
             {items.map((item) => {
               return (

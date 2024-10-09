@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addItem } from "@/store/cartSlice";
 import { useToast } from "@/hooks/use-toast";
 
@@ -47,7 +47,7 @@ const ProductCard = ({ product }: Props) => {
       </Link>
       {/* rating  */}
       <div className="flex item-center">
-        {ratingArray.map((start) => {
+        {ratingArray.map(() => {
           return (
             <StarIcon
               key={Math.random() * 1000}
