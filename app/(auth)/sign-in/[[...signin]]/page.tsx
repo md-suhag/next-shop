@@ -3,9 +3,9 @@ import React from "react";
 
 const SignInPage = () => {
   return (
-    <div>
+    <section className="min-h-[80vh] flex items-center justify-center">
       <SignIn />
-    </div>
+    </section>
   );
 };
 
